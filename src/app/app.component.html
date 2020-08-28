@@ -1,11 +1,19 @@
 
 
+<input type="number"  [(ngModel)] = "edad1"><br><br>
+<input type="number"  [(ngModel)] = "edad2"><br><br>
 
-<input type="text" id="edad1" name="edad1"><br><br>
-<input type="text" id="edad2" name="edad2"><br><br>
+<button (click) = "Calcular()">Calcular</button>   <button (click) = "Limpiar()">Limpiar</button><br>
 
-<button (click) = "Calcular">Calcular</button>
-<button (click) = "Limpiar">Limpiar cuadros de texto</button>
+
+<label>Promedio</label><br>
+<input type="number" [(ngModel)]="promedio"><br>
+<label>Suma</label><br>
+
+<input type="number" [(ngModel)]="suma"><br>
+
+
+
 
 
 <router-outlet></router-outlet>
